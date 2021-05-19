@@ -22,8 +22,6 @@ echo "$username ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 echo User $username created
 
-sudo su $username
-
 sudo apt install postgresql postgresql-contrib -y
 
 sudo -i -u postgres
@@ -54,5 +52,4 @@ echo visit website:
 
 echo http://$(hostname -I |cut -d ' ' -f 1):8080
 
-
-
+sudo su $username
