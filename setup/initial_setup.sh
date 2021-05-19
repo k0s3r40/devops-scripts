@@ -16,7 +16,7 @@ echo Add user to sudoers
 
 echo $username:$(openssl rand -base64 12 ) | sudo chpasswd -e
 
-usermod -aG sudo username
+usermod -aG sudo $username
 
 echo "$username ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
