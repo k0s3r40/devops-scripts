@@ -8,7 +8,7 @@ sudo apt-get update
 
 echo Creating user $username
 
-sudo useradd $username
+adduser $username --disabled-password  -q
 
 echo User $username created
 
