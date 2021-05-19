@@ -1,5 +1,10 @@
+if [ -z "$username" ]
+then
+      echo "\$username is empty. Set username with export username='myusername'"
+      exit
+fi
+
 sudo apt-get update
-sudo apt-get  -y upgrade
 
 echo Creating user $username
 
