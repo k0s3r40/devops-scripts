@@ -24,7 +24,7 @@ echo User $username created
 
 sudo apt install postgresql postgresql-contrib -y
 
-sudo -i -u postgres
+#sudo -i -u postgres
 
 sudo apt-get install nginx-full -y
 
